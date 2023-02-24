@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    title Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo.png")
+                | ABCD-Academy 
+            li #[a(href="/") Home]
+            li #[a(href="/") About Us]
+            li #[a(href="/") Services] 
+            li #[a(href="/") Class Info] 
+            li #[a(href="/") Contact Us]
+    
+    section#introSection
+        div.container
+            span Welcome to Dance Academy 
+            span.small ABCD- AnY boDy cAn DAncE
+
+    section#missionSection 
+        h2 Our Mission 
+        div.card#c1
+            h3 Dance Styles
+            div.card-box
+                div.card-img
+                    img(src="/static/image3.png")
+                div.card-content
+                    p Teach you best dance styles  
+        div.card#c2
+            h3 Dance Trainie
+            div.card-box
+                div.card-img
+                    img(src="/static/img1.jpg")
+                div.card-content
+                    p Give you best dance Training   
+        div.card#c3
+            h3 Dance Expert
+            div.card-box
+                div.card-img
+                    img(src="/static/image2.png")
+                div.card-content
+                    p You will be a dance Expert  
+
+    section#sponsorsSection 
+        h2 Our sponsers
+        div#sponsers
+            img(src="/static/spon1.png", alt="sponsorimg",class="spimg")
+            img(src="/static/spon2.png",alt="sponsorimg",class="spimg")
+            img(src="/static/spon3.png",alt="sponsorimg",class="spimg")
+            img(src="/static/spon4.jpg",alt="sponsorimg",class="spimg")
+
+    footer#footer 
+        | Copyright 2023
+
+    script
+      include ../static/index.js
