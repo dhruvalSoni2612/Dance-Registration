@@ -1,182 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 #logo {
-    display: flex;
-    color: rgb(206, 251, 8);
-    align-items: center;
-    justify-content: center;
-    font-family: 'Moon Dance', cursive;
-    font-size: 20px;
-    margin: 0px 50px;
+  display: flex;
+  color: rgb(206, 251, 8);
+  align-items: center;
+  justify-content: center;
+  font-family: "Moon Dance", cursive;
+  font-size: 50px;
+  margin: 0px 80px 0px 40px;
 }
 
 #logo img {
-    height: 45px;
+  height: 70px;
 }
 
 #navbar {
-    background-color: #ffa07a;
-    padding: 2px 3px;
-    font-family: 'Chakra Petch', sans-serif;
-    position: fixed;
-    width: 100%;
-    opacity: 0.8;
-    z-index: 100;
+  background-color: #ffa07a;
+  padding: 7px 3px;
+  font-family: "Chakra Petch", sans-serif;
+  position: fixed;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 100;
 }
 
 #navbar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #navbar li {
-    list-style: none;
+  list-style: none;
 }
 
 #navbar li a {
-    text-decoration: none;
-    padding: 1px 20px;
-    font-size: larger;
+  text-decoration: none;
+  margin-right: 65px;
+  font-size: x-large;
 }
 
 #navbar li a:hover {
-    color: whitesmoke;
-    background-color: deeppink;
-    border-radius: 30px;
+  color: whitesmoke;
+  border-bottom: 1px solid red;
 }
 
 #introSection::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    opacity: 0.8;
-    background: center/cover no-repeat url("/static/dancebg.jpg");
-    width: 1520px;
-    height: 888px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+  background: center/cover no-repeat url("/static/dancebg.jpg");
+  width: 100%;
+  height: 999px;
 }
 
 .container {
-    color: #ed0838;
-    font-weight: bolder;
-    font-family: 'Moon Dance', cursive;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 5rem;
-    padding-top: 203px;
+  color: #ed0838;
+  font-weight: bolder;
+  font-family: "Moon Dance", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  padding-top: 268px;
 }
 
 .small {
-    font-weight: lighter;
-    text-shadow: #ed0838;
+  font-weight: lighter;
+  text-shadow: #ed0838;
 }
 
 #missionSection {
-    height: 350px;
-    margin-top: 293px;
-    background-color: white;
-
+  height: 350px;
+  margin-top: 293px;
+  background-color: white;
 }
 
 #missionSection h2 {
-    font-family: cursive;
-    text-align: center;
-    padding-top: 12px;
+  font-family: cursive;
+  text-align: center;
+  padding-top: 12px;
 }
 
 #missionSection p {
-    background-color: greenyellow;
-    font-family: monospace;
+  background-color: greenyellow;
+  font-family: monospace;
+  border-radius: 5px;
 }
 
 .card {
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 11px;
-    width: 425px;
-    height: 250px;
-    margin-left: 5px;
-    margin: 24px 39px;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 11px;
+  width: 425px;
+  height: 250px;
+  margin-left: 5px;
+  margin: 24px 39px;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 #c1 {
-    background-color: #f6f6f6;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  background-color: #f6f6f6;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
-#c2{
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+#c2 {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
 }
 
 #c3 {
-    background-color: #80808012;
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-
+  background-color: #80808012;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .card-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 3px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3px 40px;
 }
 
 .card-img {
-    height: 184px;
-    padding: 11px 16px;
-    margin: 4px 2px;
-
+  height: 184px;
+  padding: 11px 16px;
+  margin: 4px 2px;
 }
 
 .card-img img {
-    height: inherit;
+  height: inherit;
 }
 
 .card-img img:hover {
-    transform: rotate(250deg);
+  transform: rotate(250deg);
+}
+.card-content {
+  z-index: 1;
 }
 
 #sponsorsSection {
-    height: 300px;
-    background-color: lightslategray;
+  height: 300px;
+  background-color: lightslategray;
 }
 
 #sponsorsSection h2 {
-    font-family: cursive;
-    text-align: center;
-    padding: 26px 1px;
+  font-family: cursive;
+  text-align: center;
+  padding: 26px 1px;
 }
 
 #sponsers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #sponsers img {
-    padding: 0px 12px;
-    height: 173px;
-    width: 212px;
-    margin: 3px 34px;
-    border-radius: 80px;
+  padding: 0px 12px;
+  height: 173px;
+  width: 212px;
+  margin: 3px 34px;
+  border-radius: 80px;
 }
 
 #footer {
-    height: 25px;
-    background-color: black;
-    color: white;
-    text-align: center;
+  height: 25px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }

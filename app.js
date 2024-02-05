@@ -23,7 +23,7 @@ app.use(express.urlencoded());
 app.set('view engine','pug')
 app.set('views',path.join(__dirname,'views'));
 
-app.get('/',(req,res)=>{
+app.get('/home',(req,res)=>{
     const param = {}
     res.status(200).render('home.pug',param)
 })
@@ -36,7 +36,7 @@ app.get('/contact',(req,res)=>{
 app.post('/contact',(req,res)=>{
     const myData = new Contact(req.body);
     myData.save().then(()=>{
-        res.send("item save in database")
+        res.send("We will reached to you soon, Thank You.")
     }).catch((err)=>{
         res.status(400).send("item not send")
     });

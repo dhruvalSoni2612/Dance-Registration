@@ -1,11 +1,11 @@
 extends base.pug
 
-block scripts
-      script(src='/script/index.js')
 
 block style
     style
       include ../static/style.css
+      include ../static/styleContact.css
+
 
 block content    
     section#introSection
@@ -21,26 +21,36 @@ block content
                 div.card-img
                     img(src="/static/image3.png")
                 div.card-content
-                    p Teach you best dance styles  
+                    p ~ Teach you all type of dance styles...   
         div.card#c2
             h3 Dance Trainie
             div.card-box
                 div.card-img
                     img(src="/static/img1.jpg")
                 div.card-content
-                    p Give you best dance Training   
+                    p ~ Give you best dance Training from our Expert Dancers...   
         div.card#c3
             h3 Dance Expert
             div.card-box
                 div.card-img
                     img(src="/static/image2.png")
                 div.card-content
-                    p You will be a dance Expert  
+                    p ~ We have Expert trainers who will give you best training...  
 
-    section#sponsorsSection 
+    section#sponsorsSection
         h2 Our sponsers
         div#sponsers
             img(src="/static/spon1.png", alt="sponsorimg",class="spimg")
             img(src="/static/spon2.png",alt="sponsorimg",class="spimg")
             img(src="/static/spon3.png",alt="sponsorimg",class="spimg")
             img(src="/static/spon4.jpg",alt="sponsorimg",class="spimg")
+
+
+    section#contacSection
+    h2 Contact Us by filling form
+      form(action="/contact",method="post")
+            input(type='text', name='name', class="myinput", placeholder="Enter your name")
+            input(type='phone', name='phone', class="myinput", placeholder="Enter your mobile number")
+            input(type='email', name='email', class="myinput", placeholder="Enter your email")
+            input(type='address', name='address', class="myinput", placeholder="Enter your adress")
+            button#btn Submit 
